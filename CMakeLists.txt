@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(include/datetime)
+project(datetime)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -30,7 +30,10 @@ add_library(DatetimeLib
         include/datetime/datetime/Datetime.h
         include/datetime/datetime/Datetime.cpp
         include/datetime/datetime/DatetimeRange.h
-        include/datetime/time/components/TimeComponent.h)
+        include/datetime/time/components/TimeComponent.h
+        include/market_datetime/market_date/MarketDate.h
+        include/market_datetime/market_date/MarketDate.cpp
+        include/market_datetime/market_datetimes.h)
 
 include_directories(include)
 

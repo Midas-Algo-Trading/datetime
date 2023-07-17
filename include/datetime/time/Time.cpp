@@ -345,8 +345,8 @@ int Time::get_hour_at_timezone(Timezone timezone) const
            % HOURS_PER_DAY;
 }
 
-Time::Time(uint8_t hour, uint8_t minute, uint8_t second, uint16_t millisecond, uint16_t microsecond,
-           uint16_t nanosecond, Timezone timezone) :
+Time::Time(int hour, int minute, int second, int millisecond, int microsecond,
+           int nanosecond, Timezone timezone) :
     hour(hour),
     minute(minute),
     second(second),

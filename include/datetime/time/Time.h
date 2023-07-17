@@ -73,8 +73,8 @@ public:
      * @param nanosecond nanosecond the 'Time' will be set to.
      * @param timezone timezone the 'Time' will be set to.
      */
-    explicit Time(uint8_t hour = 0, uint8_t minute = 0, uint8_t second = 0, uint16_t millisecond = 0,
-                  uint16_t microsecond = 0, uint16_t nanosecond = 0, Timezone timezone = default_timezone);
+    explicit Time(int hour=0, int minute = 0, int second = 0, int millisecond = 0,
+                  int microsecond = 0, int nanosecond = 0, Timezone timezone = default_timezone);
 
     /**
      * Creates a 'Time' from a std::string.
